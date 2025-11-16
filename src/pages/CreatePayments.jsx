@@ -169,6 +169,7 @@ const CreatePayments = () => {
         </Paper>
       </Box>
     </Layout>
+  )
 }
 
 export default CreatePayments
