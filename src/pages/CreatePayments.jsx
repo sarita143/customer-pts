@@ -30,13 +30,6 @@ const CreatePayments = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   console.log("Form Submitted:", formData);
-  //   alert("Payment details submitted!");
-  //   setFormData({ name: "", email: "", payment: "", paymentDate: "" });
-  // };
-
   const validateData = (data) => {
     let validation = false;
     if (data.name.trim() == "") {
@@ -176,80 +169,6 @@ const CreatePayments = () => {
         </Paper>
       </Box>
     </Layout>
-    // <Layout>
-    // <Box
-    //   sx={{
-    //     display: "flex",
-    //     justifyContent: "center",
-    //     alignItems: "center",
-    //   }}
-    // >
-    //   <Paper
-    //     elevation={4}
-    //     sx={{
-    //       p: 4,
-    //       width: 400,
-    //       borderRadius: 3,
-    //       textAlign: "center",
-    //     }}
-    //   >
-    //     <Typography variant="h5" gutterBottom sx={{ mb: 3 }}>
-    //       Payment Form
-    //     </Typography>
-
-    //     <form onSubmit={handleSubmit}>
-    //       <Stack spacing={2}>
-    //         <TextField
-    //           label="Name"
-    //           name="name"
-    //           value={formData.name}
-    //           onChange={handleChange}
-    //           fullWidth
-    //           required
-    //         />
-    //         <TextField
-    //           label="Email"
-    //           name="email"
-    //           type="email"
-    //           value={formData.email}
-    //           onChange={handleChange}
-    //           fullWidth
-    //           required
-    //         />
-    //         <TextField
-    //           label="Payment Amount ($)"
-    //           name="payment"
-    //           type="number"
-    //           value={formData.payment}
-    //           onChange={handleChange}
-    //           fullWidth
-    //           required
-    //         />
-    //         <TextField
-    //           label="Payment Date"
-    //           name="paymentDate"
-    //           type="date"
-    //           value={formData.paymentDate}
-    //           onChange={handleChange}
-    //           fullWidth
-    //           InputLabelProps={{ shrink: true }}
-    //           required
-    //         />
-    //         <Button
-    //           variant="contained"
-    //           color="primary"
-    //           type="submit"
-    //           fullWidth
-    //           sx={{ mt: 1 }}
-    //         >
-    //           Submit
-    //         </Button>
-    //       </Stack>
-    //     </form>
-    //   </Paper>
-    // </Box>
-    // </Layout>
-  )
 }
 
 export default CreatePayments

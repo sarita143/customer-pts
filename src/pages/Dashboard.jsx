@@ -18,12 +18,6 @@ import toast from "react-hot-toast";
 import { getData } from "../utils/apiCall";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
-// const data = [
-//   { id: 1, name: "Sarita Joshi", points: 120 },
-//   { id: 2, name: "Pooja Joshi", points: 85 },
-//   { id: 3, name: "Pretti Joshi", points: 200 },
-// ];
-
 const Dashboard = () => {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
@@ -123,48 +117,6 @@ const Dashboard = () => {
         </Table>
       </TableContainer>
     </Layout>
-    {/* <Layout>
-    <Box sx={{ p: 3 }}>
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          mb: 2,
-        }}
-      >
-        <Typography variant="h5" fontWeight="bold">
-          Customer Rewards
-        </Typography>
-
-        <Button variant="contained" color="primary" component={Link} to="/create-payments">
-          Add New
-        </Button>
-      </Box>
-
-      <TableContainer component={Paper}>
-        <Table>
-          <TableHead>
-            <TableRow>
-              <TableCell><strong>ID</strong></TableCell>
-              <TableCell><strong>Name</strong></TableCell>
-              <TableCell><strong>Payments</strong></TableCell>
-            </TableRow>
-          </TableHead>
-
-          <TableBody>
-            {data.map((row) => (
-              <TableRow key={row.id}>
-                <TableCell>{row.id}</TableCell>
-                <TableCell>{row.name}</TableCell>
-                <TableCell>$ {row.points}</TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
-    </Box>
-    </Layout> */}
     </>
   )
 }
