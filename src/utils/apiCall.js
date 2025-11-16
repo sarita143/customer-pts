@@ -1,4 +1,4 @@
-import { create, read } from "./localstorage";
+import { create, read } from "./Localstorage";
 const dataName = "apiData";
 
 export const getData = async () => {
