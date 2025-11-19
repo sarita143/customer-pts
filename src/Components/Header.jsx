@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { AppBar, Toolbar, Typography, Button, Box, Container } from "@mui/material";
 import { Link } from 'react-router-dom';
 
@@ -23,3 +24,5 @@ const Header = () => {
 }
 
 export default Header
+
+Header.propTypes = {}

@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import PropTypes from 'prop-types';
 import Dashboard from "../pages/Dashboard";
 import CustomerDetails from "../pages/CustomerDetails";
 import CreatePayments from "../pages/CreatePayments";
@@ -15,3 +16,5 @@ function AppRoutes() {
 }
 
 export default AppRoutes;
+
+AppRoutes.propTypes = {};

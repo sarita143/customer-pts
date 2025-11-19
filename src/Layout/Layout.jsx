@@ -1,20 +1,17 @@
-// src/components/Layout.jsx
 import React from "react";
+import PropTypes from 'prop-types'
 import { AppBar, Toolbar, Typography, Button, Box, Container } from "@mui/material";
 import Header from "../Components/Header";
 
 const Layout = ({ children }) => {
   return (
     <Box sx={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
-      {/* Header */}
       <Header />
       
-      {/* Main content area */}
       <Container sx={{ flex: 1, py: 4 }}>
         {children}
       </Container>
 
-      {/* Footer */}
       <Box
         component="footer"
         sx={{
@@ -33,3 +30,7 @@ const Layout = ({ children }) => {
 };
 
 export default Layout;
+
+Layout.propTypes = {
+  children: PropTypes.node,
+}
